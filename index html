@@ -2,6 +2,9 @@
 <html>
 <head>
    <title> STEPHEN WAIGANJO </title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
@@ -17,80 +20,76 @@ border-sizing: border-box;
 color:rgba(23,20,23,0.7);
 background-size:;
 width:100%;
-background:rgba(203,230,230,1);
+min-height:350vh;
+
+/*background:rgba(203,230,230,1);*/
 }
 .navbar{
-position: relative;
-margin-top:0%;
-height:60px;
+position: sticky;
+min-height:40px;
 width:100%;
+background:white;
 display:flex;
-background:;
-justify-content: space-around;
+flex-direction:row;
+justify-content:space-around;
 align-items: center;
-font-size:15px;
-
+margin-top:2px;
 }
 .logo{
 position: relative;
-margin:10px;
 font-size:15px;
-}
-.logo:focus {
-outline:none;
+top:50%;
+font-weight:bold;
 }
 .logo:hover{
-height: inherit;
-width:auto;
-background:;
-font-size:14px;
-display:flex;
-margin:2px;
-color:blue;
-align-items: center;
-margin:2px;
+position: relative;
 border-bottom:2px solid blue;
+color:blue;
 }
 .foot{
-position: relative;
-bottom:0;
-height:auto;
-width:100%;
+position: absolute;
+display:flex;
+flex-direction:column;
 background:rgba(20,48,48,0.1);
-display:flex;
-font-size:12.5px;
-flex-direction:column;
+justify-content: center;
 align-items: center;
-margin-top:10px;
+font-size:12px;
 border-top:2px solid rgba(40,48,48,0.01);
-}
-.container {
-position: relative;
-display:flex;
-flex-direction:column;
-align-items: center;
-margin:30px;
+box-shadow:2px 2px 3px 5px rgba(21,20 ,23,0.1);
+width:100%;
+bottom:0;
+height:inherit;
+margin-top:auto;
 
 }
-.cont{
-position:;
+.container {
+position: absolute;
+display:flex;
+width:100%;
+flex-direction:column;
+align-items: center;
+bottom:12%;
+background:;
+}
+.container .cont{
+position: relative;
 height:200px;
 width:200px;
 background-image:url("https://mimo.app/i/hacker.png");
-/*background:rgba(21,20 ,23,0.2);*/
 object-fit:fill;
 object-repeat:no-repeat;
 background-position: center;
-box-shadow:2px 2px 3px 5px rgba(21,20 ,23,0.2);
+box-shadow:2px 2px 3px 5px rgba(21,20 ,23,0.05);
 display:flex;
 filter:blur(0.1px);
-margin:10px;
+margin:5%;
 align-items: center;
 flex-direction:column;
 font-size:15px;
-justify-content: start;
+justify-content: ;
 z-index:1;
 border:none;
+bottom:20%;
 }
 .cont h6{
 position: absolute;
@@ -101,14 +100,14 @@ transition:0.5s ease;
 }
 .cont h5{
 position: absolute;
-top:3px;
+top:;
 }
 
 
 .cont:hover h5{
 position: absolute;
 font-size:15px;
-transition:1s ease-out;
+transition:0.5s ease-out;
 font-weight:bold;
 }
 .cont:hover{
@@ -118,33 +117,33 @@ font-weight:bold;
 
 }
 .cont-follow{
-position: relative;
+position: absolute;
 display:flex;
-height:100px;
+height:5%;
 width:100%;
 background:rgba(0,0,0 ,0.1);
 justify-content: space-around;
 align-items: center;
 outline:none;
+bottom:5%;
 text-dacorarion:none;
+box-shadow:2px 2px 3px 5px rgba(21,20 ,23,0.1);
 }
 .cont-follow h4{
 position: absolute;
 top:0;
 }
-.cont-follow a{
-position: relative;
-bottom:0;
-}
+
+
 .cont-follow a:hover{
 filter:drop-shadow(2px 3px 10px blue);
 }
 .sidebar{
 position: absolute;
-height:390px;
+height:17.5%;
 width:0px;
-background:rgba(20,8,4,1);
-box-shadow: 0px 1px 0px 0px  rgba(20,23 ,20,1);
+background:white;
+box-shadow:inset 3px 3px 7px,inset -3px -3px 7px ;
 transition:0.5s ease-in;
 Display:flex;
 align-items: center;
@@ -175,7 +174,7 @@ position: absolute;
 height:300px;
 width:0px;
 background:rgba(21,23,24,1);
-transition:0.5s ease-in;
+transition:0.5s ease-out;
 
 Display:flex;
 align-items: center;
@@ -217,7 +216,8 @@ z-index:0;
 position: absolute;
 right:0;
 height :58.5vh;
-width:200px;
+width:58%;
+background:white;
 background-image:url("https://mimo.app/i/hacker.png");
 background-size:cover;
 object-fit:fill;
@@ -227,21 +227,31 @@ border-top-left-radius:100%;
 border-bottom-left-radius:100%;
 border-left:3px solid lightblue;
 box-shadow:5px 3px 4px 4px rgba(21,23,24,1);
-z-index:4;
+z-index:2;
 }
 .tex{
 position: absolute;
-right:55%;
-top:40%;
-
+left:0%;
+top:30%;
+z-index:1;
+display:flex;
+flex-direction:column;
+justify-contact:space-around;
 }
 .tex h2{
 color:;
+
 }
-.tex h4{
-position: absolute;
-margin-top:20px;
-left:10px;
+.tex h5{
+position:relative;
+left:3%;
+
+}
+.tex h6{
+position: relative;
+margin-top:15px;
+left:3%;
+
 }
 .homesidebar{
 position: absolute;
@@ -256,9 +266,71 @@ object-repeat:no-repeat;
 background-position: center;
 border-top-left-radius:100%;
 border-bottom-left-radius:100%;
-box-shadow:5px 3px 4px 4px rgba(21,23,24,1);
+box-shadow:5px  4px 7px ;
 left:60%;
 z-index:2;
+}
+.sdbart{
+width:256.5px;
+height:58.5vh;
+transition:0.5s ease;
+}
+.midcont{
+height:inherit;
+width:100%;
+}
+.iconz{
+position:relative;
+height:40px;
+width:40px;
+border-radius:50%;
+background:;
+display:flex;
+align-items: center;
+justify-content: center;
+box-shadow:2px 1px 4px gray, -1px -2px 7px ;
+}
+.iconz:hover{
+position:relative;
+height:40px;
+width:40px;
+border-radius:50%;
+background:;
+display:flex;
+align-items: center;
+justify-content: center;
+box-shadow:inset 2px 1px 4px gray, inset -1px -2px 7px ;
+}
+
+#insta:hover{
+
+}
+.aboutc{
+position: absolute;
+height:95vh;
+width:95vw;
+background:;
+display:flex;
+justify-content: center;
+
+
+}
+.aboutc, h3{
+position: absolute;
+display:flex;
+justify-content: center;
+
+}
+.aboutc, p{
+position: absolute;
+display:flex;
+
+padding:2.5%;
+}
+@media screen and (min-width:400px){
+ .homesidebar{
+ background:none;
+ }
 }
 
 </style>
@@ -266,27 +338,38 @@ z-index:2;
    <div >LOGO</div>
    <div class="logo">HOME</div>
   <div class="logo" id="about">ABOUT</div>
-  <div class="logo">CONTACT</div>
-  <div class="logo">HELP</div>
+  <div class="logo" id="service">SERVICE</div>
+  <div class="logo" id="contact">CONTACT</div>
 </div>
-<div class="actbtn">+</div>
+<div class="actbtn"><i class="fa fa-bars"></i></div>
+<div class="midcont">
 <div class="sidebar">
-<div class="del">X</div>
-<h1>heading</h1>
- <h4>LETS MAKE THE WORLD A SMALL VILLAGE</h4>
+<div class="del"><i class="fa fa-close"></i></div>
+
  <div class="homesidebar"></div>
 </div>
 <div class="homec">
  <div class="tex">
   <h2>HELLO THERE</h2>
-  <h5>My name is:<br> STEPHEN-WAIGANJO</h5>
-  <h5>I am a web developer </h5>
-  <h4>l have years of experience in programming </h4>
+  <h5>My name is:<br>STEPHEN-WAIGANJO</h5>
+  <h5>I am a PROGRAMMER </h5>
+  
  </div>
   <div class="homeside"></div>
  </div>
+</div>
+<div class="aboutc">
+<h3 style="position: absolute; top:-15px;">ABOUT</h3><br>
+<p>
+<li>Hello there, my name is Stephen waiganjo,i am programmer with tons of experience in running and creating various projects.<br>
+marriage status:<strong>not married</strong><br>
+but still searching. 
+</li>
+<li>Number of programming languages i know are more than ten </li>
+</p>
+</div>
 <div class="container">
-<h3>ABOUT</h3>
+<h3 style="position: absolute; top:-15px;">SERVICES</h3>
 <div class="cont">
  <h5>PERSONAL WEBSITES</h5>
  <h6 style="padding:5px;">
@@ -312,32 +395,43 @@ z-index:2;
 </div>
 <div class="cont-follow">
  <h4>lets get connected</h4>
-<i class="fa fa-whatsapp" style="font-size:24px;"><a href="https://wa.me/2540794349600"></a></i>
-<i class="fa fa-instagram" style="font-size:24px;"></i> 
-<i class="fa fa-telegram" style="font-size:24px;"></i>  
+<div class="iconz"><i class="fa fa-whatsapp" style="font-size:24px; color: green;" id="wa"><a href="https://wa.me/+254794349600"></a></i></div>
+<div class="iconz"><i class="fa fa-instagram" style="font-size:24px; color:red;" id="insta"></i> </div>
+ <div class="iconz"><i class="fa fa-telegram" style="font-size:24px; color:blue;" id="tele"></i>  </div>
 </div>
 <div class="foot">
- <h3></h3>
-<h4>creating websites</h4>
+<h5><label></label>#stephenwa#stephens#stephen's</h5>
 <h5><label>gmail:</label>stephelp@gmail.com</h5>
 <h5><label>contact:</label>0794349600</h5>
 <h5><label>location:</label>Nairobi </h5>
 <h5><label>©.</label>copyright </h5>
-<h5><label></label>#stephenwa#stephens#stephen's</h5>
+
  </div>
    <script>
 const sdbar=document.querySelector(".sidebar");
 const del=document.querySelector(".del");
 const actbtn=document.querySelector(".actbtn");
-
+const about=document.querySelector("#about");
+const homesidebar=document.querySelector(".homesidebar");
+const contact=document.querySelector("#contact");
+const service=document.querySelector("#service");
 actbtn.addEventListener("click",()=>{
- sdbar.style.width="260px";
+ sdbar.classList.toggle("sdbart");
  
 });
 del.addEventListener("click",()=>{
- sdbar.style.width="0px";
- 
+ sdbar.classList.toggle("sdbart");
+});    
+about.addEventListener("click",()=>{
+ document.documentElement.scrollBottom="200vh";
+});    
+contact.addEventListener("click",()=>{
+ document.documentElement.scrollBottom="0";
+});    
+service.addEventListener("click",()=>{
+ document.documentElement.scrollBottom="300vh";
 });    
    </script>
 </body>
 </html>
+    
